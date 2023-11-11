@@ -6,11 +6,11 @@ import com.example.holubsqlbackend.infrastructure.holub.text.ParseFailure;
 
 import java.io.*;
 
-public class holubRepository {
+public class HolubRepository {
     Database database;
 
 
-    public holubRepository(){
+    public HolubRepository(){
         try {
             database = new Database(new File("Dbase"));
         } catch (IOException e) {
