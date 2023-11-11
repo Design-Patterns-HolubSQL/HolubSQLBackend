@@ -1,4 +1,4 @@
-package com.example.holubsqlbackend.application.client;
+package com.example.holubsqlbackend.application.rest;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
