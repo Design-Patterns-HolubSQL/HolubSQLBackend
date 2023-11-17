@@ -1,0 +1,32 @@
+ingredient
+ingredient_id,ingredient_name,allergic
+1,Tomato,false
+2,Beef,true
+3,Chicken,true
+4,Shrimp,true
+5,Broccoli,false
+6,Mushroom,false
+7,Onion,false
+8,Garlic,false
+9,Cheese,true
+10,Spinach,false
+11,Lettuce,false
+12,Egg,true
+13,Soy Sauce,true
+14,Rice,false
+15,Pasta,false
+16,Bell Pepper,false
+17,Olive Oil,false
+18,Flour,true
+19,Milk,true
+20,Sugar,true
+21,Salt,false
+22,Pepper,false
+23,Cilantro,false
+24,Lemon,false
+25,Ginger,false
+26,Basil,false
+27,Oregano,false
+28,Paprika,false
+29,Cumin,false
+30,Honey,true

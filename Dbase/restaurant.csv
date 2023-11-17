@@ -1,0 +1,22 @@
+restaurant
+restaurant_id,restaurant_name,longitude,latitude,contact_number,region
+1,The Gourmet Spot,37.7749,-122.4194,555-1234,korean
+2,Savory Delights,34.0522,-118.2437,555-5678,korean
+3,Spice Fusion,40.7128,-74.0060,555-8765,korean
+4,Seafood Haven,41.8781,-87.6298,555-4321,korean
+5,Bella Italia,51.5074,-0.1278,555-7890,korean
+6,Taste of Tokyo,35.6895,139.6917,555-2345,japanese
+7,Mexican Fiesta,19.4326,-99.1332,555-6789,japanese
+8,French Connection,48.8566,2.3522,555-3456,japanese
+9,Flavors of India,28.6139,77.2090,555-9012,japanese
+10,Sizzling BBQ,37.7749,-122.4194,555-6789,chinese
+11,Pasta Paradise,34.0522,-118.2437,555-1234,chinese
+12,Dim Sum Delight,40.7128,-74.0060,555-5678,western
+13,Coastal Breeze,41.8781,-87.6298,555-8765,western
+14,Greek Delicacies,51.5074,-0.1278,555-4321,japanese
+15,Sushi Symphony,35.6895,139.6917,555-7890,western
+16,Taco Town,19.4326,-99.1332,555-2345,chinese
+17,Parisian Elegance,48.8566,2.3522,555-9012,western
+18,Spicy Curry House,28.6139,77.2090,555-3456,chinese
+19,Grill Master,37.7749,-122.4194,555-6789,chinese
+20,Asian Wok,34.0522,-118.2437,555-1234,japanese
