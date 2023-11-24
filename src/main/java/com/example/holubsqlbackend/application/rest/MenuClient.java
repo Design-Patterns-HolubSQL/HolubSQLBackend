@@ -22,23 +22,8 @@ public class MenuClient {
     private final MenuService menuService;
 
     @GetMapping("/restaurantMenus")
-    public ResponseEntity<MenuResponseDTO> getIngredients(@RequestParam String id) {
-
-        List<MenuEntity> menuEntities = menuService.searchMenusByRestaurantId(id);
-        List<MenuDTO> menuDTO = new ArrayList<>();
-
-        for (MenuEntity menuEntity : menuEntities) {
-            menuDTO.add(MenuDTO.builder()
-                    .restaurant_id(menuEntity.getRestaurant_id())
-                    .price(menuEntity.getPrice())
-                    .menu_name(menuEntity.getMenu_name())
-                    .menu_id(menuEntity.getMenu_id())
-                    .build());
-        }
-
-        MenuResponseDTO menuResponseDTO = MenuResponseDTO.builder()
-                .menu(menuDTO)
-                .build();
+    public ResponseEntity<MenuResponseDTO> getMenus(@RequestParam String id) {
+        MenuResponseDTO menuResponseDTO = menuService.getMenus(id);
         return ResponseEntity.status(HttpStatus.OK).body(menuResponseDTO);
     }
 }

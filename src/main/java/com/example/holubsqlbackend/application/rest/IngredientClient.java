@@ -26,26 +26,7 @@ public class IngredientClient {
 
     @GetMapping("/ingredientsOfMenu")
     public ResponseEntity<IngredientResponseDTO> getIngredients(@RequestParam String id) {
-
-        List<UsesEntity> usesEntities = usesService.searchUsesByMenuId(id);
-
-        List<IngredientEntity> ingredientEntities = new ArrayList<>();
-        for(UsesEntity usesEntity:usesEntities){
-            ingredientEntities.add(ingredientService.searchIngredientById(usesEntity.getIngredient_id()));
-        }
-
-        List<IngredientDTO> ingredientDTO = new ArrayList<>();
-        for (IngredientEntity ingredientEntity : ingredientEntities) {
-            ingredientDTO.add(IngredientDTO.builder()
-                    .ingredient_id(ingredientEntity.getIngredient_id())
-                    .ingredient_name(ingredientEntity.getIngredient_name())
-                    .allergic(ingredientEntity.getAllergic())
-                    .build());
-        }
-
-        IngredientResponseDTO ingredientResponseDTO = IngredientResponseDTO.builder()
-                .ingredient(ingredientDTO)
-                .build();
+        IngredientResponseDTO ingredientResponseDTO = ingredientService.getIngredients(id);
         return ResponseEntity.status(HttpStatus.OK).body(ingredientResponseDTO);
     }
 
