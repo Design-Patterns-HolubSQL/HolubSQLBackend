@@ -2,9 +2,11 @@ package com.example.holubsqlbackend.infrastructure.holub.database;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import com.example.holubsqlbackend.infrastructure.db.holub.database.Database;
+import com.example.holubsqlbackend.infrastructure.db.holub.database.Table;
 import org.junit.jupiter.api.Test;
 
-import com.example.holubsqlbackend.infrastructure.holub.text.ParseFailure;
+import com.example.holubsqlbackend.infrastructure.db.holub.text.ParseFailure;
 
 import java.io.*;
 
