@@ -9,14 +9,12 @@ public class MenuDTO {
     private String restaurant_id;
     private String menu_name;
     private String price;
-    private String picture;
 
     @Builder
-    public MenuDTO(String menu_id, String restaurant_id, String menu_name, String price, String picture) {
+    public MenuDTO(String menu_id, String restaurant_id, String menu_name, String price) {
         this.menu_id = menu_id;
         this.restaurant_id = restaurant_id;
         this.menu_name = menu_name;
         this.price = price;
-        this.picture = picture;
     }
 }

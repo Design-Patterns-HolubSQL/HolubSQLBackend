@@ -31,7 +31,6 @@ public class MenuClient {
             menuDTO.add(MenuDTO.builder()
                     .restaurant_id(menuEntity.getRestaurant_id())
                     .price(menuEntity.getPrice())
-                    .picture(menuEntity.getPicture())
                     .menu_name(menuEntity.getMenu_name())
                     .menu_id(menuEntity.getMenu_id())
                     .build());

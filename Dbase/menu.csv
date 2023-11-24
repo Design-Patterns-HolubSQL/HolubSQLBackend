@@ -1,42 +1,42 @@
 menu
-menu_id,restaurant_id,menu_name,price,picture
-1,1,Filet Mignon,29.99,filet_mignon.jpg
-2,1,Lobster Thermidor,39.99,lobster_thermidor.jpg
-3,2,Chicken Alfredo,17.99,chicken_alfredo.jpg
-4,2,Shrimp Scampi,22.99,shrimp_scampi.jpg
-5,3,Curry Chicken,15.99,curry_chicken.jpg
-6,3,Spicy Tofu Stir Fry,12.99,spicy_tofu_stir_fry.jpg
-7,4,Grilled Salmon,26.99,grilled_salmon.jpg
-8,4,Seafood Paella,34.99,seafood_paella.jpg
-9,5,Lasagna Bolognese,18.99,lasagna_bolognese.jpg
-10,5,Pizza Margherita,14.99,pizza_margherita.jpg
-11,6,Sushi Combo A,24.99,sushi_combo_a.jpg
-12,6,Ramen Noodles,11.99,ramen_noodles.jpg
-13,7,Tacos al Pastor,9.99,tacos_al_pastor.jpg
-14,7,Enchiladas Verde,12.99,enchiladas_verde.jpg
-15,8,Beef Bourguignon,31.99,beef_bourguignon.jpg
-16,8,Quiche Lorraine,15.99,quiche_lorraine.jpg
-17,9,Chicken Tikka Masala,19.99,chicken_tikka_masala.jpg
-18,9,Vegetable Biryani,16.99,vegetable_biryani.jpg
-19,10,Barbecue Ribs,23.99,barbecue_ribs.jpg
-20,10,Grilled Corn on the Cob,8.99,grilled_corn_on_the_cob.jpg
-21,11,Spaghetti Carbonara,14.99,spaghetti_carbonara.jpg
-22,11,Caprese Salad,10.99,caprese_salad.jpg
-23,12,Har Gow (Shrimp Dumplings),8.99,har_gow.jpg
-24,12,Chow Mein,12.99,chow_mein.jpg
-25,13,Crab Cakes,17.99,crab_cakes.jpg
-26,13,Clam Chowder,9.99,clam_chowder.jpg
-27,14,Gyro Platter,15.99,gyro_platter.jpg
-28,14,Moussaka,18.99,moussaka.jpg
-29,15,Sashimi Deluxe,27.99,sashimi_deluxe.jpg
-30,15,Miso Soup,5.99,miso_soup.jpg
-31,16,Carne Asada Burrito,11.99,carne_asada_burrito.jpg
-32,16,Quesadilla,8.99,quesadilla.jpg
-33,17,Coq au Vin,26.99,coq_au_vin.jpg
-34,17,Escargot,20.99,escargot.jpg
-35,18,Chicken Korma,18.99,chicken_korma.jpg
-36,18,Aloo Gobi,14.99,aloo_gobi.jpg
-37,19,Barbecue Chicken Wings,10.99,barbecue_chicken_wings.jpg
-38,19,Loaded Nachos,13.99,loaded_nachos.jpg
-39,20,General Tso's Chicken,16.99,general_tsos_chicken.jpg
-40,20,Spring Rolls,6.99,spring_rolls.jpg
+menu_id,restaurant_id,menu_name,price
+1,1,Filet Mignon,29.99
+2,1,Lobster Thermidor,39.99
+3,2,Chicken Alfredo,17.99
+4,2,Shrimp Scampi,22.99
+5,3,Curry Chicken,15.99
+6,3,Spicy Tofu Stir Fry,12.99
+7,4,Grilled Salmon,26.99
+8,4,Seafood Paella,34.99
+9,5,Lasagna Bolognese,18.99
+10,5,Pizza Margherita,14.99
+11,6,Sushi Combo A,24.99
+12,6,Ramen Noodles,11.99
+13,7,Tacos al Pastor,9.99
+14,7,Enchiladas Verde,12.99
+15,8,Beef Bourguignon,31.99
+16,8,Quiche Lorraine,15.99
+17,9,Chicken Tikka Masala,19.99
+18,9,Vegetable Biryani,16.99
+19,10,Barbecue Ribs,23.99
+20,10,Grilled Corn on the Cob,8.99
+21,11,Spaghetti Carbonara,14.99
+22,11,Caprese Salad,10.99
+23,12,Har Gow (Shrimp Dumplings),8.99
+24,12,Chow Mein,12.99
+25,13,Crab Cakes,17.99
+26,13,Clam Chowder,9.99
+27,14,Gyro Platter,15.99
+28,14,Moussaka,18.99
+29,15,Sashimi Deluxe,27.99
+30,15,Miso Soup,5.99
+31,16,Carne Asada Burrito,11.99
+32,16,Quesadilla,8.99
+33,17,Coq au Vin,26.99
+34,17,Escargot,20.99
+35,18,Chicken Korma,18.99
+36,18,Aloo Gobi,14.99
+37,19,Barbecue Chicken Wings,10.99
+38,19,Loaded Nachos,13.99
+39,20,General Tso's Chicken,16.99
+40,20,Spring Rolls,6.99

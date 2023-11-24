@@ -29,7 +29,6 @@ public class MenuService {
                     .restaurant_id(rowData[1].toString())
                     .menu_name(rowData[2].toString())
                     .price(rowData[3].toString())
-                    .picture(rowData[4].toString())
                     .build());
         }
         return menuEntities;
