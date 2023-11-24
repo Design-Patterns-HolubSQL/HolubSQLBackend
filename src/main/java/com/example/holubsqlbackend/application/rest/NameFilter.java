@@ -10,7 +10,7 @@ public class NameFilter extends TemplateRtFilter {
     void filterRtList(Object filter) {
         List<RtDTO> result = new ArrayList<>();
         for(RtDTO rtEntity:rtEntities){
-            if(rtEntity.getRestaurant_name().contains((String)filter)){
+            if(rtEntity.getRestaurant_name().toLowerCase().contains(((String)filter).toLowerCase())){
                 result.add(rtEntity);
             }
         }
