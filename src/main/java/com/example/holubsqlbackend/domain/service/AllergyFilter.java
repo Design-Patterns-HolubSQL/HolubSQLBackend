@@ -1,4 +1,4 @@
-package com.example.holubsqlbackend.application.rest;
+package com.example.holubsqlbackend.domain.service;
 
 import com.example.holubsqlbackend.application.dto.RtDTO;
 import com.example.holubsqlbackend.domain.entity.IngredientEntity;
