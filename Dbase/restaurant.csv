@@ -1,22 +1,22 @@
 restaurant
 restaurant_id,restaurant_name,longitude,latitude,contact_number,region
-1,The Gourmet Spot,37.7749,-122.4194,555-1234,korean
-2,Savory Delights,34.0522,-118.2437,555-5678,korean
-3,Spice Fusion,40.7128,-74.0060,555-8765,korean
-4,Seafood Haven,41.8781,-87.6298,555-4321,korean
-5,Bella Italia,51.5074,-0.1278,555-7890,korean
-6,Taste of Tokyo,35.6895,139.6917,555-2345,japanese
-7,Mexican Fiesta,19.4326,-99.1332,555-6789,japanese
-8,French Connection,48.8566,2.3522,555-3456,japanese
-9,Flavors of India,28.6139,77.2090,555-9012,japanese
-10,Sizzling BBQ,37.7749,-122.4194,555-6789,chinese
-11,Pasta Paradise,34.0522,-118.2437,555-1234,chinese
-12,Dim Sum Delight,40.7128,-74.0060,555-5678,western
-13,Coastal Breeze,41.8781,-87.6298,555-8765,western
-14,Greek Delicacies,51.5074,-0.1278,555-4321,japanese
-15,Sushi Symphony,35.6895,139.6917,555-7890,western
-16,Taco Town,19.4326,-99.1332,555-2345,chinese
-17,Parisian Elegance,48.8566,2.3522,555-9012,western
-18,Spicy Curry House,28.6139,77.2090,555-3456,chinese
-19,Grill Master,37.7749,-122.4194,555-6789,chinese
-20,Asian Wok,34.0522,-118.2437,555-1234,japanese
+1,The Gourmet Spot,126.808343,37.675393,555-1234,korean
+2,Savory Delights,126.889222,37.433018,555-5678,korean
+3,Spice Fusion,127.224986,37.544521,555-8765,korean
+4,Seafood Haven,127.1216,37.564021,555-4321,korean
+5,Bella Italia,126.922256,37.581321,555-7890,korean
+6,Taste of Tokyo,127.019605,37.485379,555-2345,japanese
+7,Mexican Fiesta,126.775979,37.657091,555-6789,japanese
+8,French Connection,126.762793,37.550048,555-3456,japanese
+9,Flavors of India,126.810892,37.50285,555-9012,japanese
+10,Sizzling BBQ,126.868284,37.517622,555-6789,chinese
+11,Pasta Paradise,126.943644,37.691164,555-1234,chinese
+12,Dim Sum Delight,126.813873,37.593173,555-5678,western
+13,Coastal Breeze,127.228906,37.614673,555-8765,western
+14,Greek Delicacies,126.958175,37.714651,555-4321,japanese
+15,Sushi Symphony,126.853782,37.507207,555-7890,western
+16,Taco Town,127.1199,37.571469,555-2345,chinese
+17,Parisian Elegance,126.779551,37.600049,555-9012,western
+18,Spicy Curry House,126.920508,37.50674,555-3456,chinese
+19,Grill Master,126.856866,37.469485,555-6789,chinese
+20,Asian Wok,127.2318,37.647648,555-1234,japanese
