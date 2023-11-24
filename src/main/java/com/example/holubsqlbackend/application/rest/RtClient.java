@@ -24,9 +24,6 @@ import java.util.*;
 @RequiredArgsConstructor
 public class RtClient {
     private final RtService restaurantService;
-    private final MenuService menuService;
-    private final IngredientService ingredientService;
-    private final UsesService usesService;
 
     @GetMapping("/restaurants")
     public ResponseEntity<RtResponseDTO> getRestaurants(
@@ -34,85 +31,13 @@ public class RtClient {
             @Nullable @RequestParam String tag1,
             @Nullable @RequestParam String tag2,
             @Nullable @RequestParam String tag3) {
-        List<RtEntity> restaurants = restaurantService.getRts();
-        List<RtDTO> rtDTO = new ArrayList<>();
-        for (RtEntity rtEntity : restaurants) {
-            List<UsesEntity> usesEntities = new ArrayList<>();
-            for (MenuEntity menuEntity : menuService.searchMenusByRestaurantId(rtEntity.getRestaurant_id())){
-                usesEntities.addAll(usesService.searchUsesByMenuId(menuEntity.getMenu_id()));
-            }
-            Set<String> ingredientIds = new HashSet<>();
-            for(UsesEntity usesEntity : usesEntities){
-                ingredientIds.add(usesEntity.getIngredient_id());
-            }
-            List<IngredientEntity> ingredientEntities = new ArrayList<>();
-            List<String> list = new ArrayList<>(ingredientIds);
-            for(IngredientEntity ingredientEntity : ingredientService.searchIngredientsByIds(list)){
-                if(ingredientEntity.getAllergic()) {
-                    ingredientEntities.add(ingredientEntity);
-                }
-            }
-
-            rtDTO.add(RtDTO.builder()
-                    .restaurant_id(rtEntity.getRestaurant_id())
-                    .restaurant_name(rtEntity.getRestaurant_name())
-                    .region(rtEntity.getRegion())
-                    .longitude(rtEntity.getLongitude())
-                    .latitude(rtEntity.getLatitude())
-                    .contact_number(rtEntity.getContact_number())
-                    .allergic_ingredients(ingredientEntities)
-                    .build());
-        }
-
-
-        if(name != null){
-            TemplateRtFilter filter = new NameFilter();
-            filter.setRtList(rtDTO);
-            filter.filterRtList(name);
-            rtDTO = filter.getFilteredResult();
-        }
-        if(tag1 != null){
-            TemplateRtFilter filter = new AllergyFilter();
-            filter.setRtList(rtDTO);
-            filter.filterRtList(tag1);
-            rtDTO = filter.getFilteredResult();
-        }
-        if(tag2 != null){
-            TemplateRtFilter filter = new DistanceFilter();
-            filter.setRtList(rtDTO);
-            filter.filterRtList(tag2);
-            rtDTO = filter.getFilteredResult();
-        }
-        if(tag3 != null){
-            TemplateRtFilter filter = new RegionFilter();
-            filter.setRtList(rtDTO);
-            filter.filterRtList(tag3);
-            rtDTO = filter.getFilteredResult();
-        }
-
-        RtResponseDTO rtResponseDTO = RtResponseDTO.builder()
-                .restaurant(rtDTO)
-                .build();
+        RtResponseDTO rtResponseDTO = restaurantService.getRestaurants(name, tag1, tag2, tag3);
         return ResponseEntity.status(HttpStatus.OK).body(rtResponseDTO);
     }
 
     @GetMapping("/restaurantDetails")
     public ResponseEntity<RtResponseDTO> getRestaurantDetails(@RequestParam String id) {
-        List<RtEntity> restaurant = new ArrayList<>(Collections.singletonList(restaurantService.searchRtById(id)));
-        List<RtDTO> rtDTO = new ArrayList<>();
-        for (RtEntity rtEntity : restaurant) {
-            rtDTO.add(RtDTO.builder()
-                    .restaurant_id(rtEntity.getRestaurant_id())
-                    .restaurant_name(rtEntity.getRestaurant_name())
-                    .region(rtEntity.getRegion())
-                    .longitude(rtEntity.getLongitude())
-                    .latitude(rtEntity.getLatitude())
-                    .contact_number(rtEntity.getContact_number())
-                    .build());
-        }
-        RtResponseDTO rtResponseDTO = RtResponseDTO.builder()
-                .restaurant(rtDTO)
-                .build();
+        RtResponseDTO rtResponseDTO = restaurantService.getRestaurantDetails(id);
         return ResponseEntity.status(HttpStatus.OK).body(rtResponseDTO);
     }
 }
